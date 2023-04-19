@@ -10,7 +10,7 @@ New-Item -Path "c:\windows\tmp" -ItemType Directory -ErrorAction SilentlyContinu
 New-Item -Path 'c:\windows\tmp\fslogix.txt' -ItemType File -ErrorAction SilentlyContinue
 
 
-$path = "HKLM:\Software\Policies\Microsoft\AzureADAccount"
+$path = "HKLM:\SOFTWARE\Policies\Microsoft\AzureADAccount"
 $name = "LoadCredKeyFromProfile"
 $type = "DWord"
 $value = 1
@@ -28,7 +28,8 @@ $name3 = "DeleteLocalProfileWhenVHDShouldApply"
 $type3 = "DWord"
 $value3 = 1
 
+New-Item -Path $path
 New-ItemProperty -Path $path -Name $name -PropertyType $type -Value $value
 New-ItemProperty -Path $path1 -Name $name1 -PropertyType $type1 -Value $value1
-New-ItemProperty -Path $path2 -Name $name2 -PropertyType $type2 -Value $value2
-New-ItemProperty -Path $path3 -Name $name3 -PropertyType $type3 -Value $value3
+New-ItemProperty -Path $path1 -Name $name2 -PropertyType $type2 -Value $value2
+New-ItemProperty -Path $path1 -Name $name3 -PropertyType $type3 -Value $value3
