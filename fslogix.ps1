@@ -28,8 +28,16 @@ $name3 = "DeleteLocalProfileWhenVHDShouldApply"
 $type3 = "DWord"
 $value3 = 1
 
+$path2 = "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters"
+$name4 = "CloudKerberosTicketRetrievalEnabled"
+$type4 = "DWord"
+$value4 = 1
+
+
+
 New-Item -Path $path
 New-ItemProperty -Path $path -Name $name -PropertyType $type -Value $value
 New-ItemProperty -Path $path1 -Name $name1 -PropertyType $type1 -Value $value1
 New-ItemProperty -Path $path1 -Name $name2 -PropertyType $type2 -Value $value2
 New-ItemProperty -Path $path1 -Name $name3 -PropertyType $type3 -Value $value3
+New-ItemProperty -Path $path2 -Name $name4 -PropertyType $type4 -Value $value4
