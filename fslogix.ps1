@@ -39,5 +39,5 @@ New-ItemProperty -Path $path -Name $name -PropertyType $type -Value $value
 New-ItemProperty -Path $path1 -Name $name1 -PropertyType $type1 -Value $value1
 New-ItemProperty -Path $path1 -Name $name2 -PropertyType $type2 -Value $value2
 New-ItemProperty -Path $path1 -Name $name3 -PropertyType $type3 -Value $value3
-New-ItemProperty -Path $path1 -Name $name4 -PropertyType $type2 -Value $value4
-New-ItemProperty -Path $path1 -Name $name5 -PropertyType $type3 -Value $value5
+New-ItemProperty -Path $path1 -Name $name4 -PropertyType $type4 -Value $value4
+New-ItemProperty -Path $path1 -Name $name5 -PropertyType $type5 -Value $value5
