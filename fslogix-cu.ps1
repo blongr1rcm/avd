@@ -44,6 +44,10 @@ $value5 = 1
 $name6 = "HealthyProvidersRequiredForRegister"
 $type6 = "DWord"
 $value6 = 1
+$path2 = "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters"
+$name7 = "CloudKerberosTicketRetrievalEnabled"
+$type7 = "DWord"
+$value7 = 1
 
 New-Item -Path $path
 New-ItemProperty -Path $path -Name $name -PropertyType $type -Value $value
@@ -53,3 +57,4 @@ New-ItemProperty -Path $path1 -Name $name3 -PropertyType $type3 -Value $value3
 New-ItemProperty -Path $path1 -Name $name4 -PropertyType $type4 -Value $value4
 New-ItemProperty -Path $path1 -Name $name5 -PropertyType $type5 -Value $value5
 New-ItemProperty -Path $path1 -Name $name6 -PropertyType $type6 -Value $value6
+New-ItemProperty -Path $path2 -Name $name7 -PropertyType $type7 -Value $value7
