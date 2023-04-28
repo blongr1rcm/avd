@@ -24,15 +24,15 @@ $value2 = "type=smb,connectionString=\\stavdmgmteus201.file.core.windows.net\pro
 $name3 = "VolumeType"
 $type3 = "String"
 $value3 = "VHDX"
-$name3 = "DeleteLocalProfileWhenVHDShouldApply"
-$type3 = "DWord"
-$value3 = 1
-$name4 = "ClearCacheOnLogoff"
+$name4 = "DeleteLocalProfileWhenVHDShouldApply"
 $type4 = "DWord"
 $value4 = 1
-$name5 = "HealthyProvidersRequiredForRegister"
+$name5 = "ClearCacheOnLogoff"
 $type5 = "DWord"
 $value5 = 1
+$name6 = "HealthyProvidersRequiredForRegister"
+$type6 = "DWord"
+$value6 = 1
 
 New-Item -Path $path
 New-ItemProperty -Path $path -Name $name -PropertyType $type -Value $value
@@ -41,3 +41,4 @@ New-ItemProperty -Path $path1 -Name $name2 -PropertyType $type2 -Value $value2
 New-ItemProperty -Path $path1 -Name $name3 -PropertyType $type3 -Value $value3
 New-ItemProperty -Path $path1 -Name $name4 -PropertyType $type4 -Value $value4
 New-ItemProperty -Path $path1 -Name $name5 -PropertyType $type5 -Value $value5
+New-ItemProperty -Path $path1 -Name $name6 -PropertyType $type6 -Value $value6
